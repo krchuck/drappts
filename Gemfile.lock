@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 8b9302558088c6a1903c7af4f8417a136a96356b
+  branch: master
+  specs:
+    faker (2.7.0)
+      i18n (>= 1.6, < 1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,7 +70,6 @@ GEM
     bootsnap (1.4.5)
       msgpack (~> 1.0)
     builder (3.2.3)
-    byebug (11.0.1)
     capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -72,6 +79,7 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
     erubi (1.9.0)
@@ -103,6 +111,11 @@ GEM
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (4.0.1)
     puma (4.3.0)
       nio4r (~> 2.0)
@@ -144,6 +157,11 @@ GEM
     regexp_parser (1.6.0)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.2.1)
@@ -157,6 +175,8 @@ GEM
     selenium-webdriver (3.142.6)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    semantic-ui-sass (2.4.2.0)
+      sass (>= 3.2)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -198,15 +218,17 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
-  byebug
   capybara (>= 2.15)
+  faker!
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  pry-rails
   puma (~> 4.1)
   rails (~> 6.0.1)
   sass-rails (>= 6)
   selenium-webdriver
+  semantic-ui-sass
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
